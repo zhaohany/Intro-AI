@@ -1,0 +1,73 @@
+Note1 2019-1-29
+Tree search:
+. Breadth-first search
+• Uniform-cost search
+• Depth-first search
+• Depth-limited search
+• Iterative deepening depth-first search
+• Bidirectional search
+
+
+Completeness: Is the algorith garanteed to find a solution when there is one?
+Optimality: Find optimal solution?
+Time Complexity: How long does it take to find?
+Space Complexity:How much memory?
+
+Compare performance:
+b: maximum branching factor(Max number of children in each node)
+d:depth of shallowest goal state
+m: maximum length of path in the tree
+
+
+-BFS: Breadth-First Search:
+
+First in first out, finish each level First
+
+     a
+    b c
+  d e  f g
+
+a->b->c->d->e.....
+
+This is Complete
+No, not optimal in terms of real distance but optimal in terms of unit steps
+because the result is the shallowest level.
+Time: b^d
+space: b^d
+
+terrible in terms of algorith
+
+
+-Depth-First search (DFS)
+Last in first out: stack
+
+Expand the deepest node in current search
+
+complete? can run into infinity steps when repeate step are allowed.
+DFS not optimal
+Time:b^m m is the maximum depth if any node so worse tha  BFS
+space: b*m    only o(m) using backtracking
+
+
+-Depth-limite search:
+depth limit l<d
+
+time: b^l
+space: b*l
+
+
+
+-Interative dfs:
+time:b^d
+space: b*d
+Optimality:yes
+
+
+
+-bidirection search:
+one from start, one from goal
+complete like BFS
+time:2b^(d/2)  ->  b^(d/2)
+space: 2b^(d/2)  ->  b^(d/2)
+
+-uniform-cost search
