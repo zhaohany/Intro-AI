@@ -71,3 +71,76 @@ time:2b^(d/2)  ->  b^(d/2)
 space: 2b^(d/2)  ->  b^(d/2)
 
 -uniform-cost search
+
+
+2019-1-31
+Best-First Search
+
+Function F for search as evaluation function
+
+Heuristic function h(n)  approximate cost from n to goal
+GBFS(Greedy Best-first search)
+if approximate distance is close  to real distance, then optimal
+
+A* search
+
+Most popular search algorithm
+function g and function f
+add approximate and traveled
+chose min z=g+f
+
+check the min one
+
+
+approximate: admissible  never overtime cost: h<h*(true cost)
+
+
+2019-2-1 Resitation
+Dikstra(Unifor Cost Search)
+
+
+2019-2-5
+
+Optimality of A* search
+Heuristic function is consistent: approximate h <= real h
+It can always find the goal without infinite lopp because f value keep increasing
+and it will find the small one(to ensure it not going backward)
+
+
+manhattan distance
+
+In real life, try different h function to see whitch one goes faster.
+
+
+Evaluate heuristics functions:
+
+evaluate the number of nodes expanded by a search technique
+
+if h2 has an average a lower effective branching factor than h1
+
+h2(n) >= h1(n)
+
+h2 dominate h1
+
+
+multi-heuristics
+
+hmax=max(h1, h2, h....)
+
+hmax is admissible and consistent if h1, h2,.... are admissible and consistent
+
+
+New PPT:
+Local Search
+Continuous state spaces
+Stochastic solutions
+
+
+Optimization
+
+
+local Search
+local maximum and global maximum
+
+
+Hill-climbing search (aka greedy local search)
