@@ -1,4 +1,4 @@
-Note1 2019-1-29
+wqNote1 2019-1-29
 Tree search:
 . Breadth-first search
 • Uniform-cost search
@@ -144,3 +144,20 @@ local maximum and global maximum
 
 
 Hill-climbing search (aka greedy local search)
+gradient decent is this for continuous
+
+
+2019-2-12
+Hill climbing: The trouble with plateaus
+plateaus: a flat area of the state-space landscape
+新想法：多线程，在local maximun的地方开启多线程，然后多个小球一起往多个方向走
+
+
+simulated annealing
+temperature is high at begining and decreasing
+basic idea: find local maximun, move further, update.
+
+
+local beam search
+
+genetic algorithms
